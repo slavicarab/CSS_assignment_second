@@ -1,0 +1,36 @@
+.container {
+    max-width: 100%;
+    padding-left: 50px;
+
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    border-radius: 10%;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
